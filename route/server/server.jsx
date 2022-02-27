@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// 혼을 갈아넣은 API 형식입니다. DB에 맞춰서 사용하세요~
+// API 형식입니다. DB에 맞춰서 사용하세요~
 // API 수정하거나 추가되면 이 형식 맞추셔서 이용하시면 됩니당.
 app.get("/login"), (req, res)=>{
     const user = "select * from usertable"
