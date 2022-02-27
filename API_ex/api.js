@@ -34,26 +34,26 @@ edit(id,data) {
   });
 },
 
-//main
+//home
 getData() {
   return Send({
-      url: '/main',
+      url: '/home',
       method: 'get',
   });
 },
 //++
 
 //postView
-getData(id) { //main postView
+getData(id) { //home postView
   return Send({
-      url: '/main/post',
+      url: '/home/post',
       method: 'get',
   });
 },
 
 getData(id) { //detail postView
   return Send({
-      url: `/main/post/${id}`,
+      url: `/home/post/${id}`,
       method: 'get',
   });
 },
@@ -61,7 +61,7 @@ getData(id) { //detail postView
 //postCreate
 create(data) {
   return Send({
-      url: '/main/post/write',
+      url: '/home/post/write',
       method: 'post',
       data: data,
   });
@@ -70,7 +70,7 @@ create(data) {
 //post
 edit(id,data) {
   return Send({
-      url: `/profile/edit/${id}`,
+      url: `/home/post/edit/${id}`,
       method: 'put or patch',
       data: data,
   });
@@ -79,7 +79,7 @@ edit(id,data) {
 //timeline
 getData(id) {
   return Send({
-      url: `/main/timeline/${id}`,
+      url: `/home/timeline/${id}`,
       method: 'get',
   });
 },
