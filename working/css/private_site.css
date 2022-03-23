@@ -1,0 +1,155 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color--background);
+}
+:root{
+    --color--background: #E5E5E5;
+    --color--rectanangle--1: #C5D0E7;
+    --color--rectanangle--2: #3C64B1;
+    --font--normal: 나눔스퀘어, 'NanumSquare', sans-serif;
+}
+/*title*/
+.title{
+    width: 100%;
+    height: 88px;
+    display: flex;
+}
+.logo{
+    color: var(--color--rectanangle--2);
+    font-weight: bold;
+    font-size: auto;
+    width: 70px;
+    height: 32px;
+    margin: 28px auto 28px 165px;
+}
+.login{
+    height: 32px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 23px 165px 23px auto;
+}
+.login > li{
+    margin-left: 23px;
+}
+.log_in{
+    border: none;
+    background-color: var(--color--rectanangle--2);
+    color:#fff;
+    cursor: pointer;
+    width: 88px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.log_in_image{
+    background-color: var(--color--rectanangle--2);
+    width:42px;
+    height:42px;
+    border-radius:21px;
+}
+/**picture*/
+.picture{
+    width: 100%;
+    height: 243px;
+    background-color: var(--color--rectanangle--2);
+}
+/**imformation*/
+.imformation{
+    width: 100%;
+    height: 133px;
+    display: flex;
+}
+.people_image{
+    position: relative;
+    top :-97px;
+    width: 190px;
+    height: 190px;
+    border: 2px #ffffff solid;
+    border-radius: 95px;
+    margin-left: 262px;
+    background-color: #373F41;
+}
+.people_name{
+    width: 68px;
+    height: 34px;
+    font-size: 30px;
+    line-height: 34px;
+    margin: 28px auto auto 43px;
+    font-family: var(--font--normal);
+    font-weight: bold;
+    
+}
+.people_etcs{
+    display: inline-flex;
+    margin: 16px auto auto 45px;
+}
+.people_etcs > div{
+    margin-right: 25px;
+    font-size: 15px;
+    line-height: 17px;
+    color: #868686;
+    font-family: var(--font--normal);
+}
+.people_etcs > i{
+    margin-right: 10px;
+}
+.people_re{
+    margin: 35px 258px auto auto;
+    font-size: 20px;
+    line-height: 22px;
+    color: #797979;
+    font-family: var(--font--normal);
+    font-weight: bold;
+    display: flex;
+}
+.people_re > i{
+    margin-right: 12px;
+}
+/**menu*/ 
+.menu{
+    width: 100%;
+    height: 84px;
+    display: inline-flex;
+    background-color: var(--color--rectanangle--1);
+}
+.menu > a{
+    background-color: var(--color--rectanangle--1);
+    width: 184px;
+    height: 84px;
+    text-align: center;
+    line-height: 80px;
+    font-family: var(--font--normal);
+    font-size: 22px;
+    color: #898989;
+    font-weight: bold;
+}
+.menu_home{
+    margin-left: 260px;
+}
+/*content*/
+.content{
+    width: 100%;
+    height: auto;
+}
+/*last*/
+.last{
+    width: 100%;
+    height: 64px;
+    background-color: #373F41;
+    display: flex;
+}
+.last > div{
+    width: 730px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    align-content: center;
+    background-color: #373F41;
+    text-align: center;
+    margin: 24px 355px 24px 355px;
+    color:#C3CBCD;
+}
