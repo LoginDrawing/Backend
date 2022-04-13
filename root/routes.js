@@ -1,12 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const login = require("../routes/login.js");
-const home = require("../routes/home.js");
-const search = require("../routes/search.js");
-const gallery = require("../routes/gallery.js");
-const personalSite = require("../routes/personalSite.js");
+const kakao = require("../routes/auth/kakao");
+const naver = require("../routes/auth/naver");
+const home = require("../routes/home");
+const search = require("../routes/search");
+const gallery = require("../routes/gallery");
+const personalSite = require("../routes/personalSite");
 
-router.get("/test", login.test);
+// kakao login apis
+router.get("/auth/kakao", kakao.login);
+router.get("/auth/kakao/callback", kakao.callback);
 
+// home page apis
+router.get("/home/getRandomProfiles", home.getRandomProfiles);
 
 module.exports = router;
