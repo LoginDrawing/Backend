@@ -10,6 +10,7 @@ const personalSite = require("../routes/personalSite");
 // kakao login apis
 router.get("/auth/kakao", kakao.login);
 router.get("/auth/kakao/callback", kakao.callback);
+router.get("/auth/kakao/info", kakao.info);
 
 // home page apis
 router.get("/home/getRandomProfiles", home.getRandomProfiles);

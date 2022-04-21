@@ -24,6 +24,7 @@
     "express-session": "1.17.2",
     "morgan": "1.10.0",
     "mysql": "2.18.1",
+    "qs": "6.10.3",
     "session": "0.1.0"
   }
 }
