@@ -15,4 +15,7 @@ router.get("/auth/kakao/info", kakao.info);
 // home page apis
 router.get("/home/getRandomProfiles", home.getRandomProfiles);
 
+// search page apis
+router.post("/search/getSearchData", search.getSearchData);
+
 module.exports = router;
