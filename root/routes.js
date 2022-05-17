@@ -18,4 +18,10 @@ router.get("/home/getRandomProfiles", home.getRandomProfiles);
 // search page apis
 router.post("/search/getSearchData", search.getSearchData);
 
+// personalSite apis
+router.get("/personalSite/getTimelineData", personalSite.getTimelineData);
+
+// gallery apis
+router.get("/gallery/getGalleryData", gallery.getGalleryData);
+
 module.exports = router;
