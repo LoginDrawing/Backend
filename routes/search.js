@@ -3,7 +3,6 @@ const connection = mysqlConnection.connection;
 
 exports.getSearchData = async (req, res) => {
   const { gender, residence, birth, death, name } = req.body;
-  console.log('body: ',req.body)
   let query = 'SELECT * FROM drawing.deceased ';
   let tail = [];
 
